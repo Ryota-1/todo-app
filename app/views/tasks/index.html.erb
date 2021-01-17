@@ -1,6 +1,7 @@
 <h1>やること一覧</h1>
 
 <%= link_to '新規作成', new_task_path %>
+
 <table>
 	<thead>
 		<tr>
@@ -14,6 +15,8 @@
 		<tr>
 			<td><%= task.title %></td>
 			<td><%= task.body %></td>
+			<td><%= link_to '編集', edit_task_path(task) %> </td>
+			<td>ß</td>
 		</tr>
 		<% end %>
 	</tbody>
